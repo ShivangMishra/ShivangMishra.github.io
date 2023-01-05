@@ -1,0 +1,30 @@
+.about {
+    /* background-color: rgb(19, 19, 17); */
+    background-color: darkslategrey;
+    padding-top: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.about-text-zone {
+    padding: 20px;
+    width: 50%;
+}
+
+.about-heading {
+    color: white;
+    font-size: 50px;
+}
+
+.about-text {
+    /* background-color: red; */
+    color: white;
+    font-size: 18px;
+}
+
+.container {
+    width: 90%;
+    background-color: black;
+    /* padding-top: 60px; */
+}

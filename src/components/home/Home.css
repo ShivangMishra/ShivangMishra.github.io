@@ -16,22 +16,32 @@
 
 .hero-area {
   display: flex;
-  padding-right: 500px;
-  max-width: 90%;
-  background-color: green;
+  /* padding-right: 500px; */
+  /* max-width: 90%; */
+  width: 90%;
+  flex-direction: column;
+  
   /* margin-top: 200px; */
 }
 
 .hero-sub {
+  color: aliceblue;
   font-size: 20px;
 }
 
 .intro-text-zone {
-  background-color: red;
+  /* background-color: red; */
   width: fit-content;
   padding: 20px;
 }
 
 .big-heading {
-  font-size: 75px;
+  color: white;
+  font-size: 80px;
+}
+
+.contact-btn {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
 }

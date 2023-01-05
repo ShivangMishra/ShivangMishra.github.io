@@ -9,6 +9,9 @@ export default function Home() {
           <p className="hero-sub">
             I specialise in developing Web applications and Games.
           </p>
+          <br />
+          <br />
+          <button className="contact-btn">Contact me!</button>
         </div>
       </div>
     </section>
