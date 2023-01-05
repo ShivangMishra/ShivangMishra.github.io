@@ -28,7 +28,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        
+        <div className="skills-container"></div>
       </div>
     </section>
   );
