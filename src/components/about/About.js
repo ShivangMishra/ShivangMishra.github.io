@@ -1,5 +1,8 @@
+import Skills from "../SkillsSphere/SkillsSphere";
 import "./About.css";
+
 export default function About() {
+  // const skillsContainer = document.getElementById("skills-container");
   return (
     <section className="about">
       <div className="about-container">
@@ -12,7 +15,7 @@ export default function About() {
               and Web Applications that leads to the success of the overall
               product. Check out some of my work in the Projects section.
             </p>
-            <br/>
+            <br />
             <p>
               I also like sharing content related to the stuff that I have
               learned over the years in Web Development so it can help other
@@ -20,15 +23,18 @@ export default function About() {
               my Linkedin where I post useful content related to Web Development
               and Programming
             </p>
-            <br/>
+            <br />
             <p>
               I'm open to Job opportunities where I can contribute, learn and
               grow. If you have a good opportunity that matches my skills and
               experience then don't hesitate to contact me.
             </p>
           </div>
+          +
         </div>
-        <div className="skills-container"></div>
+        <div className="skills-container">
+          <Skills/>
+        </div>
       </div>
     </section>
   );
