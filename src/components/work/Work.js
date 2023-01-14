@@ -1,7 +1,63 @@
 import "./Work.css";
+import WorkItem from "./WorkItem";
 
 export default function Work() {
-  const projects = [{}, {}, {}, {}, {}, {}];
+  const projects = [
+    {
+      title: "XYZ",
+      description: "Aliquip nisi nostrud do exercitation tempor anim velit.",
+      imgUrl: "https://picsum.photos/400/400",
+      category: "Web Development",
+    },
+    {
+      title: "XYZ",
+      description: "Aliquip nisi nostrud do exercitation tempor anim velit.",
+      imgUrl: "https://picsum.photos/400/400",
+      category: "Web Development",
+    },
+    {
+      title: "XYZ",
+      description: "Aliquip nisi nostrud do exercitation tempor anim velit.",
+      imgUrl: "https://picsum.photos/400/400",
+      category: "Web Development",
+    },
+    {
+      title: "XYZ",
+      description: "Aliquip nisi nostrud do exercitation tempor anim velit.",
+      imgUrl: "https://picsum.photos/400/400",
+      category: "Web Development",
+    },
+    {
+      title: "XYZ",
+      description: "Aliquip nisi nostrud do exercitation tempor anim velit.",
+      imgUrl: "https://picsum.photos/400/400",
+      category: "Web Development",
+    },
+    {
+      title: "XYZ",
+      description: "Aliquip nisi nostrud do exercitation tempor anim velit.",
+      imgUrl: "https://picsum.photos/400/400",
+      category: "Web Development",
+    },
+    {
+      title: "XYZ",
+      description: "Aliquip nisi nostrud do exercitation tempor anim velit.",
+      imgUrl: "https://picsum.photos/400/400",
+      category: "Web Development",
+    },
+    {
+      title: "XYZ",
+      description: "Aliquip nisi nostrud do exercitation tempor anim velit.",
+      imgUrl: "https://picsum.photos/400/400",
+      category: "Web Development",
+    },
+    {
+      title: "XYZ",
+      description: "Aliquip nisi nostrud do exercitation tempor anim velit.",
+      imgUrl: "https://picsum.photos/400/400",
+      category: "Web Development",
+    },
+  ];
 
   return (
     <section className="work">
@@ -9,7 +65,8 @@ export default function Work() {
         <h1 className="work-heading">Some of My Work</h1>
         <div className="work-items-container">
           {projects.map((project) => (
-            <div className="work-item"></div>
+            // <div className="work-item"></div>
+            <WorkItem {...project}/>
           ))}
         </div>
       </div>
