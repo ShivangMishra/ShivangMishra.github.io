@@ -2,17 +2,24 @@ import { useEffect } from "react";
 import "./SkillsSphere.css";
 const skills = [
   { href: "#git_", title: "Git" },
-  { href: "#json_", title: "JSON" },
-  { href: "#solidity_", title: "Solidity" },
-  { href: "#html_", title: "HTML" },
-  { href: "#react_", title: "React" },
+  { href: "#json_", title: "Jest" },
+  { href: "#json_", title: "JUnit" },
+  { href: "#solidity_", title: "Java" },
+  { href: "#html_", title: "HTML5" },
+  { href: "#html_", title: "CSS" },
+  { href: "#react_", title: "ReactJS" },
+  { href: "#python_", title: "Tailwind" },
   { href: "#python_", title: "Python" },
-  { href: "#git_", title: "Git" },
-  { href: "#json_", title: "JSON" },
-  { href: "#solidity_", title: "Solidity" },
-  { href: "#html_", title: "HTML" },
-  { href: "#react_", title: "React" },
-  { href: "#python_", title: "Python" },
+  { href: "#git_", title: "Spring" },
+  { href: "#json_", title: "JavaFX" },
+  { href: "#solidity_", title: "REST" },
+  { href: "#html_", title: "SOAP" },
+  { href: "#react_", title: "Unity" },
+  { href: "#python_", title: "NodeJS" },
+  { href: "#python_", title: "Hibernate" },
+  { href: "#python_", title: "Kafka" },
+  { href: "#python_", title: "SQL" },
+  { href: "#python_", title: "GraphQL" },
 ];
 
 const Skills = ({ ...rest }) => {
@@ -21,7 +28,8 @@ const Skills = ({ ...rest }) => {
     const TagCanvas = window.TagCanvas;
     const tagCanvasOptions = {
       textColour: "#08FDD8",
-      outlineThickness: 0.5,
+      textHeight:25,
+      outlineThickness: 5,
       outlineColour: "#FE0853",
       maxSpeed: 0.06,
       freezeActive: true,
@@ -32,7 +40,7 @@ const Skills = ({ ...rest }) => {
       noSelect: true,
       textFont: null,
       freezeDecel: true,
-      fadeIn: 3000,
+      fadeIn: 1500,
       initial: [0.3, -0.1],
       depth: 1.1,
     };
