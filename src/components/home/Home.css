@@ -6,7 +6,7 @@
 
 .home {
   /* background-color: rgb(19, 19, 17); */
-  background-color: #141B25;
+  /* background-color: #141B25; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -37,7 +37,7 @@
 }
 
 .intro-big-heading {
-  color: white;
+  color: #E6E0CB;
   font-size: 80px;
 }
 
