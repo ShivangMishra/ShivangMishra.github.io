@@ -42,12 +42,11 @@
 
 .work-item-image {
   height: 75%;
-  background-color: white;
   border-radius: 5px 5px 0 0;
 }
 
 .work-item-textzone {
-  padding: 10px 20px;
+  padding: 20px;
   border-radius: 0 0 5px 5px;
   background-color: #191919;
   height: 25%;
