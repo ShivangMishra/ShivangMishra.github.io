@@ -30,7 +30,6 @@ export default function About() {
               experience then don't hesitate to contact me.
             </p>
           </div>
-          +
         </div>
         <div className="skills-container">
           <Skills/>
