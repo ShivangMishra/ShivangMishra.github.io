@@ -19,7 +19,7 @@
   display: flex;
   /* padding-right: 500px; */
   /* max-width: 90%; */
-  width: 90%;
+  min-width: 90%;
   flex-direction: column;
   
   /* margin-top: 200px; */
@@ -38,7 +38,7 @@
 
 .intro-big-heading {
   color: #E6E0CB;
-  font-size: 80px;
+  font-size: 5rem;
 }
 
 .contact-btn {
