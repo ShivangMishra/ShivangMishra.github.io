@@ -9,7 +9,7 @@ const draw = (ctxt) => {
   linearGradient.addColorStop(1, colorBottom);
   linearGradient.addColorStop(0, colorTop);
 
-  ctxt.fillStyle = linearGradient;
+  ctxt.fillStyle = "#1D1D1D";
   ctxt.fillRect(0, 0, canvas.width, canvas.height);
 };
 
