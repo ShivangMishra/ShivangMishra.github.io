@@ -1,4 +1,4 @@
-import draw from "../../canvasAnim";
+import draw, { updateMousePosition } from "../../canvasAnim";
 import Canvas from "../canvas/Canvas";
 import "./Home.css";
 
@@ -9,8 +9,9 @@ export default function Home() {
         width={window.innerWidth}
         height={window.innerHeight}
         draw={draw}
+        updateMousePosition={updateMousePosition}
       />
-      <div className="hero-area">
+      {/* <div className="hero-area"> */}
         <div className="intro-text-zone">
           <h1 className="intro-big-heading">Hi, I'm Shivang,</h1>
           <h1 className="intro-big-heading">Fullstack Developer</h1>
@@ -20,7 +21,7 @@ export default function Home() {
           <br />
           <br />
           <button className="contact-btn">Contact me!</button>
-        </div>
+        {/* </div> */}
       </div>
     </section>
   );

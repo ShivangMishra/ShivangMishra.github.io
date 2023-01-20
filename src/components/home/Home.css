@@ -5,14 +5,13 @@
 }
 
 .home {
-  /* background-color: rgb(19, 19, 17); */
-  /* background-color: #141B25; */
   width: 100%;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   /* margin-top: -75px; */
   height: 100vh;
+  /* background-color: red; */
 }
 
 .hero-area {
@@ -26,18 +25,19 @@
 }
 
 .hero-sub {
-  color: aliceblue;
+  color: #DBE8D4;
   font-size: 20px;
 }
 
 .intro-text-zone {
+  z-index: 2;
   /* background-color: red; */
   width: fit-content;
-  padding: 20px;
+  padding-left: 80px;
 }
 
 .intro-big-heading {
-  color: #E6E0CB;
+  color: #DBE8D4;
   font-size: 5rem;
 }
 
