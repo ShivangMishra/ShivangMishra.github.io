@@ -1,5 +1,6 @@
 .work {
-  background-color: rgb(19, 19, 17);
+  /* background-color: rgb(19, 19, 17); */
+  background-color: #222733;
   /* background-color: darkslategrey; */
   justify-content: center;
   /* padding-top: 75px; */
@@ -22,7 +23,7 @@
   /* background-color: blue; */
   /* padding-left: 20px; */
   font-size: 5rem;
-  color: white;
+  color: #DBE8D4;
 }
 
 .work-items-container {
@@ -50,20 +51,20 @@
 .work-item-image {
   height: 75%;
   object-fit: cover;
-  border-radius: 5px 5px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 .work-item-textzone {
   padding: 20px;
-  border-radius: 0 0 5px 5px;
-  background-color: #191919;
+  border-radius: 0 0 10px 10px;
+  background-color: #2E3445;
   height: 25%;
 }
 
 .work-item-title {
-  color: white;
+  color: #DBE8D4;
 }
 
 .work-item-category {
-    color: gray;
+    color: #cdd9c6;
 }

@@ -27,7 +27,7 @@ const Skills = ({ ...rest }) => {
     console.log("Loading TagCanvas...");
     const TagCanvas = window.TagCanvas;
     const tagCanvasOptions = {
-      textColour: "#08FDD8",
+      textColour: "#DBE8D4",
       textHeight:25,
       outlineThickness: 5,
       outlineColour: "#FE0853",
