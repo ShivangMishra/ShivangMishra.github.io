@@ -1,16 +1,18 @@
 import { useEffect, useRef } from "react";
 
 export default function Canvas(props) {
-  const canvas = useRef();
+  const canvasRef = useRef();
   useEffect(() => {
-    const context = canvas.current.getContext("2d");
-    props.draw(context);
+    props.draw(canvasRef.current);
+    canvasRef.current.addEventListener("mousemove", (e) => {
+      props.updateMousePosition(e.offsetX, e.offsetY);
+    });
   });
 
   return (
     <canvas
-      style={{ position: "absolute", zIndex: -1 }}
-      ref={canvas}
+      style={{ position: "absolute", backgroundColor: "#222733" }}
+      ref={canvasRef}
       height={props.height}
       width={props.width}
     />
