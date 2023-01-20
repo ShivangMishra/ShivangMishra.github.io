@@ -1,5 +1,5 @@
 .about {
-    background-color:#222733;
+    background-color:var(--black);
     /* background-color: darkslategrey; */
     /* padding-top: 75px; */
     display: flex;
@@ -20,13 +20,13 @@
 }
 
 .about-heading {
-    color: #DBE8D4;
+    color: var(--text-color);
     font-size: 50px;
 }
 
 .about-text {
     /* background-color: red; */
-    color: #DBE8D4;
+    color: var(--text-color);
     font-size: 18px;
 }
 

@@ -11,7 +11,7 @@ export default function Canvas(props) {
 
   return (
     <canvas
-      style={{ position: "absolute", backgroundColor: "#222733" }}
+      style={{ position: "absolute", backgroundColor: "#111111" }}
       ref={canvasRef}
       height={props.height}
       width={props.width}

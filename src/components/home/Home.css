@@ -14,18 +14,8 @@
   /* background-color: red; */
 }
 
-.hero-area {
-  display: flex;
-  /* padding-right: 500px; */
-  /* max-width: 90%; */
-  min-width: 90%;
-  flex-direction: column;
-  
-  /* margin-top: 200px; */
-}
-
 .hero-sub {
-  color: #DBE8D4;
+  color: var(--text-color);
   font-size: 20px;
 }
 
@@ -37,7 +27,7 @@
 }
 
 .intro-big-heading {
-  color: #DBE8D4;
+  color: var(--text-color);
   font-size: 5rem;
 }
 

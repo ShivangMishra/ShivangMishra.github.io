@@ -3,6 +3,7 @@ const colorBottom = "#92977D";
 
 const numPoints = 30;
 const circleColor = "#A8B4A8";
+const boldColor = "#66FCF1";
 const DEFAULT_SIZE = 2;
 const MAX_SIZE = 20;
 
@@ -32,27 +33,28 @@ const animate = () => {
   // ctxt.fillRect(0, 0, canvas.width, canvas.height);
   ctxt.clearRect(0, 0, canvas.width, canvas.height);
 
-  ctxt.beginPath();
-  ctxt.ellipse(mouseX, mouseY, mouseRadius, mouseRadius, 0, 0, 2 * Math.PI);
+  // ctxt.beginPath();
+  // ctxt.ellipse(mouseX, mouseY, mouseRadius, mouseRadius, 0, 0, 2 * Math.PI);
 
-  ctxt.stroke();
+  // ctxt.stroke();
 
   ctxt.beginPath();
-  circles.forEach((circle) => {
+  let boldCircles = [];
+  for (let i = 0; i < circles.length; i++) {
+    const circle = circles[i];
     const distFromMouse =
       Math.pow(circle.x - mouseX, 2) + Math.pow(circle.y - mouseY, 2);
     let size = DEFAULT_SIZE;
-
-    if (distFromMouse < mouseRadius * mouseRadius) {
-      size = MAX_SIZE;
-    } else if (distFromMouse <= 4 * mouseRadius * mouseRadius) {
-      size = DEFAULT_SIZE; 
-    } 
-    // else {
-    //   size = mouseRadius - distFromMouse + DEFAULT_SIZE;
-    // }
-    ctxt.moveTo(circle.x, circle.y);
-    ctxt.ellipse(circle.x, circle.y, size, size, 0, 0, 2 * Math.PI);
+    ctxt.fillStyle = circleColor;
+    // if (distFromMouse < mouseRadius * mouseRadius) {
+    //   size = MAX_SIZE;
+    //   ctxt.fillStyle = boldColor;
+    if (distFromMouse <= 4 * mouseRadius * mouseRadius) {
+      boldCircles.push(circle);
+    } else {
+      ctxt.moveTo(circle.x, circle.y);
+      ctxt.ellipse(circle.x, circle.y, size, size, 0, 0, 2 * Math.PI);
+    }
 
     circle.x += (circle.speedX * 25) / 1000;
     circle.y += (circle.speedY * 25) / 1000;
@@ -66,6 +68,15 @@ const animate = () => {
     }
     // circle.speedX = Math.random() * 5 * (Math.random() < 0.5 ? 1 : -1);
     // console.table(circle);
+  }
+  ctxt.fill();
+
+  ctxt.beginPath();
+  ctxt.fillStyle = boldColor;
+  boldCircles.forEach((circle) => {
+    const size = DEFAULT_SIZE;
+    ctxt.moveTo(circle.x, circle.y);
+    ctxt.ellipse(circle.x, circle.y, size, size, 0, 0, 2 * Math.PI);
   });
   ctxt.fill();
   // console.log("doing");
