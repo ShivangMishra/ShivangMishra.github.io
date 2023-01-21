@@ -12,8 +12,9 @@
   padding: 0 70px;
 }
 
-.left, .right {
-  flex:1;
+.left,
+.right {
+  flex: 1;
 }
 
 .navlist {
@@ -25,18 +26,33 @@
 }
 
 .navbar li {
-  color: white;
   padding: 0 28px;
 }
 
 .sticky {
-    position: fixed;
-    top:0;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .nav-logo {
   height: 70px;
   width: 70px;
   object-fit: cover;
+}
+
+.link {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.link:hover {
+  color: var(--link-active-color);
+}
+
+.link-active {
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--link-active-color);
 }
