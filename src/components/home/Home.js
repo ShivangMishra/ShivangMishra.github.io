@@ -4,7 +4,7 @@ import "./Home.css";
 
 export default function Home() {
   return (
-    <section className="home">
+    <section className="home" id="home">
       <Canvas
         width={window.innerWidth}
         height={window.innerHeight}

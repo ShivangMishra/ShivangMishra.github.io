@@ -4,7 +4,7 @@ import "./About.css";
 export default function About() {
   // const skillsContainer = document.getElementById("skills-container");
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about-container">
         <div className="about-text-zone">
           <h1 className="about-heading"> About Me</h1>

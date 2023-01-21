@@ -29,10 +29,8 @@ const Skills = ({ ...rest }) => {
     const tagCanvasOptions = {
       textColour: "#66FCF1",
       textHeight:25,
-      outlineThickness: 5,
-      outlineColour: "#FE0853",
       maxSpeed: 0.06,
-      freezeActive: true,
+      // freezeActive: true,
       shuffleTags: true,
       shape: "sphere",
       zoom: 0.8,
@@ -40,8 +38,8 @@ const Skills = ({ ...rest }) => {
       noSelect: true,
       textFont: null,
       freezeDecel: true,
-      fadeIn: 1500,
-      initial: [0.3, -0.1],
+      fadeIn: 1000,
+      initial: [0.2, -0.1],
       depth: 1.1,
     };
     try {
