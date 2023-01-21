@@ -1,16 +1,18 @@
 const colorTop = "#1C3942";
 const colorBottom = "#92977D";
 
-const numPoints = 30;
-const circleColor = "#A8B4A8";
+const numPoints = 50;
+const circleColor = "#fff";
+const mdsq = 80 * 80;
 const boldColor = "#66FCF1";
-const DEFAULT_SIZE = 2;
+const lineColor = "#3d9791";
+const DEFAULT_SIZE = 3;
 const MAX_SIZE = 20;
 
-const MAX_SPEED_X = 0;
+const MAX_SPEED_X = 10;
 const MAX_SPEED_Y = -10;
 
-const MIN_SPEED_X = 0;
+const MIN_SPEED_X = -10;
 const MIN_SPEED_Y = -20;
 
 const mouseRadius = 50;
@@ -40,17 +42,26 @@ const animate = () => {
 
   ctxt.beginPath();
   let boldCircles = [];
+  let lines = [];
   for (let i = 0; i < circles.length; i++) {
     const circle = circles[i];
-    const distFromMouse =
+    for (let j = i + 1; j < circles.length; j++) {
+      const c2 = circles[j];
+      const dsq = Math.pow(c2.x - circle.x, 2) + Math.pow(c2.y - circle.y, 2);
+      if (dsq < mdsq) {
+        lines.push({
+          p1: { x: circle.x, y: circle.y },
+          p2: { x: c2.x, y: c2.y },
+        });
+      }
+    }
+    const distFromMouseSq =
       Math.pow(circle.x - mouseX, 2) + Math.pow(circle.y - mouseY, 2);
     let size = DEFAULT_SIZE;
     ctxt.fillStyle = circleColor;
-    // if (distFromMouse < mouseRadius * mouseRadius) {
-    //   size = MAX_SIZE;
-    //   ctxt.fillStyle = boldColor;
-    if (distFromMouse <= 4 * mouseRadius * mouseRadius) {
-      boldCircles.push(circle);
+    
+    if (distFromMouseSq <= 4 * mouseRadius * mouseRadius) {
+      boldCircles.push({ circle: circle, dist: Math.sqrt(distFromMouseSq) });
     } else {
       ctxt.moveTo(circle.x, circle.y);
       ctxt.ellipse(circle.x, circle.y, size, size, 0, 0, 2 * Math.PI);
@@ -66,20 +77,27 @@ const animate = () => {
       circle.y = canvas.height;
       circle.x = Math.random() * canvas.width;
     }
-    // circle.speedX = Math.random() * 5 * (Math.random() < 0.5 ? 1 : -1);
-    // console.table(circle);
   }
   ctxt.fill();
 
   ctxt.beginPath();
+  ctxt.strokeStyle = lineColor;
+  lines.forEach((line) => {
+    ctxt.moveTo(line.p1.x, line.p1.y);
+    ctxt.lineTo(line.p2.x, line.p2.y);
+  });
+  ctxt.stroke();
+
+
+  ctxt.beginPath();
   ctxt.fillStyle = boldColor;
-  boldCircles.forEach((circle) => {
-    const size = DEFAULT_SIZE;
+  boldCircles.forEach(({ circle, dist }) => {
+    let size = (MAX_SIZE * mouseRadius) / dist;
+    if (size > MAX_SIZE) size = MAX_SIZE;
     ctxt.moveTo(circle.x, circle.y);
     ctxt.ellipse(circle.x, circle.y, size, size, 0, 0, 2 * Math.PI);
   });
   ctxt.fill();
-  // console.log("doing");
   requestAnimationFrame(animate);
 };
 
