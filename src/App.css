@@ -1,18 +1,21 @@
 :root {
-    --black: #111111;
-    --yellow: #dbe8d4;
-    --white: #fff;
-    --dark-blue: #2E3445;
-    --gray: #191919;
-    --text-color: var(--white);
-  }
+  --black: #111111;
+  --yellow: #dbe8d4;
+  --white: #fff;
+  --light-blue: #66fcf1;
+  --dark-blue: #2e3445;
+  --gray: #191919;
+  --text-color: var(--white);
+  --link-color: var(--white);
+  --link-active-color: var(--light-blue);
+}
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
