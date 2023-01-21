@@ -42,7 +42,7 @@ export default function Work() {
   ];
 
   return (
-    <section className="work">
+    <section className="work" id="work">
       <div className="work-container">
         <h1 className="work-heading">My Work</h1>
         <div className="work-items-container">
