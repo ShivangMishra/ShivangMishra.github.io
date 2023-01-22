@@ -1,19 +1,18 @@
-const colorTop = "#1C3942";
-const colorBottom = "#92977D";
-
-const numPoints = 50;
+let curTime = 0;
+let prevTime = 0;
+const numPoints = 75;
 const circleColor = "#fff";
-const mdsq = 80 * 80;
+const mdsq = 100 * 100;
 const boldColor = "#66FCF1";
 const lineColor = "#3d9791";
 const DEFAULT_SIZE = 3;
 const MAX_SIZE = 20;
 
-const MAX_SPEED_X = 10;
-const MAX_SPEED_Y = -10;
+const MIN_SPEED_X = -100;
+const MAX_SPEED_X = 100;
 
-const MIN_SPEED_X = -10;
-const MIN_SPEED_Y = -20;
+const MIN_SPEED_Y = -200;
+const MAX_SPEED_Y = -100;
 
 const mouseRadius = 50;
 
@@ -31,10 +30,12 @@ const updateMousePosition = (x, y) => {
   mouseY = y;
 };
 
-const animate = () => {
-  
-  ctxt.clearRect(0, 0, canvasOff.width, canvasOff.height);
-
+const animate = (timestamp) => {
+  curTime = timestamp;
+  const dt = (curTime - prevTime)/1000;
+  prevTime = curTime;
+  ctxt.fillStyle="#111";
+  ctxt.fillRect(0, 0, canvasOff.width, canvasOff.height);
   ctxt.beginPath();
   let boldCircles = [];
   let lines = [];
@@ -60,10 +61,11 @@ const animate = () => {
     } else {
       ctxt.moveTo(circle.x, circle.y);
       ctxt.ellipse(circle.x, circle.y, size, size, 0, 0, 2 * Math.PI);
-    }
+    } 
+    // console.log(dt);
 
-    circle.x += (circle.speedX * 25) / 1000;
-    circle.y += (circle.speedY * 25) / 1000;
+    circle.x += circle.speedX * dt;
+    circle.y += circle.speedY * dt;
     if (circle.x + size < 0) {
       circle.x = canvasOff.width;
       circle.y = Math.random() * canvasOff.height;
@@ -92,7 +94,7 @@ const animate = () => {
     ctxt.ellipse(circle.x, circle.y, size, size, 0, 0, 2 * Math.PI);
   });
   ctxt.fill();
-  ctxtMain.drawImage(canvasOff, 0,0);
+  ctxtMain.drawImage(canvasOff, 0, 0);
   requestAnimationFrame(animate);
 };
 
@@ -114,11 +116,12 @@ const draw = (canvas, offscreenCanvas) => {
     };
     circles.push(circle);
   }
-  ctxt = canvasOff.getContext('2d', {alpha:false});
-  ctxtMain = canvasMain.getContext('2d', {alpha:false});
+  ctxt = canvasOff.getContext("2d", { alpha: false });
+  ctxtMain = canvasMain.getContext("2d", { alpha: false });
   ctxt.fillStyle = circleColor;
-
-  animate();
+  curTime = performance.now();
+  prevTime = curTime;
+  animate(curTime);
 };
 
 export { updateMousePosition };
