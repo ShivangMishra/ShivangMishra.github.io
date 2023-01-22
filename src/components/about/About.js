@@ -9,7 +9,6 @@ export default function About() {
       <div className="about-container">
         <div className="about-text-zone">
           <h1 className="about-heading">About Me</h1>
-          <br />
           <div className="about-text">
             <p>
               I'm a Full-stack developer building user-centric applications for

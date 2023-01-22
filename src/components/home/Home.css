@@ -34,3 +34,17 @@
   font-size: 20px;
   pointer-events: all;
 }
+
+@media only screen and (max-width: 580px) {
+  .intro-big-heading {
+    font-size: 15vw;
+  }
+
+  .hero-sub {
+    font-size: 3vw;
+  }
+
+  .intro-text-zone {
+    padding:10vw;
+  }
+}

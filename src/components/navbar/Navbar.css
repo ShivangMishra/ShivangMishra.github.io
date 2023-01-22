@@ -55,3 +55,16 @@
   font-size: 2rem;
   color: var(--link-active-color);
 }
+
+@media only screen and (max-width: 1278px) {
+  .navbar {
+    justify-content: center;
+  }
+}
+
+
+@media only screen and (max-width: 552px) {
+  .navbar {
+    display: none;
+  }
+}

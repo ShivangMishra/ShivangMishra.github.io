@@ -33,7 +33,7 @@ const Skills = ({ ...rest }) => {
       // freezeActive: true,
       shuffleTags: true,
       shape: "sphere",
-      zoom: 0.8,
+      zoom: 1.0,
       wheelZoom: false,
       noSelect: true,
       textFont: null,
