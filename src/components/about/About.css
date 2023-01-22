@@ -20,7 +20,9 @@
 }
 
 .about-heading {
+    /* text-align: center; */
     color: var(--text-color);
+    /* background-color: red; */
     font-size: 50px;
 }
 

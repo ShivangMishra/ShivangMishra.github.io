@@ -1,3 +1,4 @@
+import { NavHashLink } from "react-router-hash-link";
 import Skills from "../SkillsSphere/SkillsSphere";
 import "./About.css";
 
@@ -7,32 +8,31 @@ export default function About() {
     <section className="about" id="about">
       <div className="about-container">
         <div className="about-text-zone">
-          <h1 className="about-heading"> About Me</h1>
+          <h1 className="about-heading">About Me</h1>
           <br />
           <div className="about-text">
             <p>
-              I'm a Frontend Web Developer building the Front-end of Websites
-              and Web Applications that leads to the success of the overall
-              product. Check out some of my work in the Projects section.
+              I'm a Full-stack developer building user-centric applications for
+              the web, mobile and desktop. Check out some of
+              <NavHashLink style={{textDecoration:"none", color:"var(--light-blue)"}} smooth to="#work"> my work</NavHashLink>.
             </p>
             <br />
             <p>
-              I also like sharing content related to the stuff that I have
-              learned over the years in Web Development so it can help other
-              people of the Dev Community. Feel free to Connect or Follow me on
-              my Linkedin where I post useful content related to Web Development
-              and Programming
+              Since the beginning of my journey as a passionate software
+              developer, I've worked with many agencies, and collaborated with
+              experienced developers, picking up useful skills and experience
+              along the way.
             </p>
             <br />
             <p>
               I'm open to Job opportunities where I can contribute, learn and
               grow. If you have a good opportunity that matches my skills and
-              experience then don't hesitate to contact me.
+              experience then contact me now.
             </p>
           </div>
         </div>
         <div className="skills-container">
-          <Skills/>
+          <Skills />
         </div>
       </div>
     </section>
