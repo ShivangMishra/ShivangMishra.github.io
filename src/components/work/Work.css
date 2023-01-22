@@ -1,14 +1,11 @@
 .work {
-  /* background-color: rgb(19, 19, 17); */
   background-color: var(--black);
-  /* background-color: darkslategrey; */
   justify-content: center;
   padding-top: 75px;
   display: flex;
 }
 
 .work-container {
-  /* width: 95%; */
   padding: 0 50px;
   align-items: center;
   display: flex;
@@ -18,27 +15,19 @@
 .work-heading {
   text-align: center;
   display: flex;
-  /* align-items: center; */
-  /* background-color: aqua; */
-  /* background-color: blue; */
-  /* padding-left: 20px; */
   font-size: 5rem;
   color: var(--text-color);
 }
 
 .work-items-container {
-  /* background-color: red; */
   margin-top: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* column-gap: 20px;
-    row-gap: 30px; */
   flex-wrap: wrap;
 }
 
 .work-item {
-  /* background-color: blanchedalmond; */
   padding: 20px;
   display: flex;
   flex-direction: column;
