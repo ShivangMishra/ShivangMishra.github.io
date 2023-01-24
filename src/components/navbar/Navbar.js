@@ -6,22 +6,18 @@ export default function Navbar() {
   const { hash } = useLocation();
   const isActive = (iHash) => hash === iHash;
   const sections = [
-    { title: "Home", to: "#home" },
-    { title: "Work", to: "#work" },
+    // { title: "Home", to: "#home" },
     { title: "About", to: "#about" },
+    { title: "Work", to: "#work" },
     { title: "Contact", to: "#contact" },
   ];
   return (
     <nav className="navbar sticky">
-      <ul className="navlist left">
+      <ul className="navlist">
         {sections.map((section) => (
           <li>
             <NavHashLink
-              className={
-                isActive(section.to)
-                  ? "link-active"
-                  : "link"
-              }
+              className={isActive(section.to) ? "link-active" : "link"}
               smooth
               to={section.to}
             >
@@ -29,8 +25,8 @@ export default function Navbar() {
             </NavHashLink>
           </li>
         ))}
+        <button>Resume</button>
       </ul>
-      <div className="right"></div>
     </nav>
   );
 }
