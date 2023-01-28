@@ -1,10 +1,11 @@
 let curTime = 0;
 let prevTime = 0;
-const numPoints = 75;
+let numPoints = 0;
 const circleColor = "#fff";
 const mdsq = 100 * 100;
+const bgColor = "#020A13";
 const boldColor = "#66FCF1";
-const lineColor = "#3d9791";
+const lineColor = "#3E3E3E";
 const DEFAULT_SIZE = 3;
 const MAX_SIZE = 20;
 
@@ -34,7 +35,7 @@ const animate = (timestamp) => {
   curTime = timestamp;
   const dt = (curTime - prevTime)/1000;
   prevTime = curTime;
-  ctxt.fillStyle="#111";
+  ctxt.fillStyle=bgColor;
   ctxt.fillRect(0, 0, canvasOff.width, canvasOff.height);
   ctxt.beginPath();
   let boldCircles = [];
@@ -101,6 +102,7 @@ const animate = (timestamp) => {
 const draw = (canvas, offscreenCanvas) => {
   // canvasOff = ctxt.canvasOff;
   // canvas.offscreenCanvas = document.createElement("canvas");
+  numPoints = canvas.width * 0.03;
   canvasMain = canvas;
   canvasOff = offscreenCanvas;
 
