@@ -13,7 +13,7 @@
 
 .hero-sub {
   color: var(--text-color);
-  font-size: 2rem;
+  font-size: 1.946rem;
 }
 
 .intro-text-zone {
@@ -21,12 +21,14 @@
   z-index: 2;
   pointer-events: none;
   width: fit-content;
-  padding-left: 15vw;
+  padding-left: 17vw;
 }
 
 .intro-big-heading {
   color: var(--text-color);
   font-size: 5rem;
+  line-height: 1.1;
+  /* font-family: Bogart,Recoleta,Helvetica Neue,Helvetica,Arial,sans-serif; */
 }
 
 .contact-btn {
@@ -72,6 +74,9 @@
   }
 
   .intro-text-zone {
-    padding:10vw;
+    padding: 10vw;
   }
 }
+
+
+

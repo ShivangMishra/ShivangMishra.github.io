@@ -13,14 +13,21 @@ export default function Home() {
       />
       {/* <div className="hero-area"> */}
       <div className="intro-text-zone">
-          <h1 className="intro-big-heading">Hi. I'm Shivang.</h1>
-          <h1 className="intro-big-heading">A Software Developer</h1>
-          <p className="hero-sub">
-            I specialise in developing Web applications and Games.
-          </p>
-          <br />
-          <br />
-          <button className="contact-btn">Contact me!</button>
+        <div className="glitch">
+          <h1 className="intro-big-heading">I'm Shivang Mishra</h1>
+        </div>
+        <h1 className="intro-big-heading">A Software Developer</h1>
+        {/* <p class="glitch">
+          <span aria-hidden="true">codepen</span>
+          codepen
+          <span aria-hidden="true">codepen</span>
+        </p> */}
+        <p className="hero-sub">
+          I specialise in developing Web applications and Games.
+        </p>
+        <br />
+        <br />
+        <button className="contact-btn">Contact me!</button>
         {/* </div> */}
       </div>
     </section>
