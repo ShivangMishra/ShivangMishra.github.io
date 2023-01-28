@@ -28,12 +28,16 @@
 
 .navbar li {
   padding: 0 28px;
+  font-size: 1.2rem;
 }
 
 .navbar button {
   padding: 10px 10px;
-  font-size: 1.2rem;
-  /* border-radius: 10px; */
+  font-size: 1rem;
+}
+
+.navbar button:hover {
+  box-shadow: inset 5rem 0 0 0 var(--light-blue);
 }
 
 .sticky {
@@ -51,16 +55,14 @@
 .link {
   color: var(--link-color);
   text-decoration: none;
-  font-size: 1.5rem;
 }
 
 .link:hover {
-  color: var(--link-active-color);
+  color: var(--link-hover-color);
 }
 
 .link-active {
   text-decoration: none;
-  font-size: 1.5rem;
   color: var(--link-active-color);
 }
 
