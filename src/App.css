@@ -3,10 +3,12 @@
   --yellow: #dbe8d4;
   --white: #fff;
   --light-blue: #66fcf1;
-  --dark-blue: #2e3445;
+  --dark-blue: #020a13;
+  --light-gray: #9ba2ae;
   --gray: #191919;
   --text-color: var(--white);
-  --link-color: var(--white);
+  --link-color: var(--light-gray);
+  --link-hover-color: var(--white);
   --link-active-color: var(--light-blue);
 }
 
@@ -16,11 +18,32 @@
   padding: 0;
 }
 
-html,body {
+html,
+body {
   overflow-x: hidden;
 }
 
 body {
   position: relative;
-  background-color: var(--black);
+  background-color: var(--dark-blue);
+}
+
+button {
+  cursor: pointer;
+  color: var(--light-blue);
+  background-color: transparent;
+  border: 1px solid var(--light-blue);
+  border-radius: 5px;
+  line-height: 1;
+  transition: all .35s;
+}
+
+button:hover {
+  color: var(--dark-blue);
+  box-shadow: inset 12.5rem 0 0 0 var(--light-blue);
+}
+
+button:active {
+  color: var(--dark-blue);
+  border: 1px solid transparent;
 }
