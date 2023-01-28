@@ -21,6 +21,7 @@
   z-index: 2;
   pointer-events: none;
   width: fit-content;
+  animation: intro-anim 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   padding-left: 17vw;
 }
 
@@ -29,6 +30,12 @@
   font-size: 5rem;
   line-height: 1.1;
   /* font-family: Bogart,Recoleta,Helvetica Neue,Helvetica,Arial,sans-serif; */
+}
+
+@keyframes intro-anim
+{ 
+  from { margin-top: 240px; opacity: 0;}
+  to { margin-top: 0; opacity: 1;}
 }
 
 .contact-btn {

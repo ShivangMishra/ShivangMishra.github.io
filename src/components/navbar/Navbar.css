@@ -29,11 +29,13 @@
 .navbar li {
   padding: 0 28px;
   font-size: 1.2rem;
+  animation: nav-anim 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 }
 
 .navbar button {
   padding: 10px 10px;
   font-size: 1rem;
+  animation: nav-anim 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 }
 
 .navbar button:hover {
@@ -64,6 +66,13 @@
 .link-active {
   text-decoration: none;
   color: var(--link-active-color);
+}
+
+
+@keyframes nav-anim
+{ 
+  from { transform: translateY(-50px); opacity: 0;}
+  to {opacity: 1;}
 }
 
 @media only screen and (max-width: 1278px) {
