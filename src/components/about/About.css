@@ -39,6 +39,8 @@
 
 .skills-container {
   display: flex;
+  
+  animation: skills-anim 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   justify-content: center;
   align-items: center;
   width: 40%;
