@@ -4,39 +4,65 @@ import WorkItem from "./WorkItem";
 export default function Work() {
   const projects = [
     {
-      title: "XYZ",
-      description: "Aliquip nisi nostrud do exercitation tempor anim velit.",
+      title: "Halcyon Theme",
+      description:
+        "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
       imgUrl: "https://picsum.photos/400/400",
+      techList: [
+        "React",
+        "Styled Components",
+        "Twilio",
+        "Figma",
+        "Gifted Chat",
+      ],
+      linkList: ["Github", "Show Project"],
+      category: "Web Development",
+    },
+    {
+      title: "Halcyon Theme",
+      description:
+        "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
+      imgUrl: "https://picsum.photos/400/400",
+      techList: [
+        "React",
+        "Styled Components",
+        "Twilio",
+        "Figma",
+        "Gifted Chat",
+      ],
+      linkList: ["Github", "Show Project"],
       category: "Web Development",
     },
     {
       title: "XYZ",
       description: "Aliquip nisi nostrud do exercitation tempor anim velit.",
       imgUrl: "https://picsum.photos/400/400",
+      techList: [],
+      linkList: ["", ""],
       category: "Web Development",
     },
     {
       title: "XYZ",
       description: "Aliquip nisi nostrud do exercitation tempor anim velit.",
       imgUrl: "https://picsum.photos/400/400",
+      techList: [],
+      linkList: ["", ""],
       category: "Web Development",
     },
     {
       title: "XYZ",
       description: "Aliquip nisi nostrud do exercitation tempor anim velit.",
       imgUrl: "https://picsum.photos/400/400",
+      techList: [],
+      linkList: ["", ""],
       category: "Web Development",
     },
     {
       title: "XYZ",
       description: "Aliquip nisi nostrud do exercitation tempor anim velit.",
       imgUrl: "https://picsum.photos/400/400",
-      category: "Web Development",
-    },
-    {
-      title: "XYZ",
-      description: "Aliquip nisi nostrud do exercitation tempor anim velit.",
-      imgUrl: "https://picsum.photos/400/400",
+      techList: [],
+      linkList: ["", ""],
       category: "Web Development",
     },
   ];
@@ -46,9 +72,9 @@ export default function Work() {
       <div className="work-container">
         <h1 className="work-heading">My Work</h1>
         <div className="work-items-container">
-          {projects.map((project) => (
+          {projects.map((project, i) => (
             // <div className="work-item"></div>
-            <WorkItem {...project}/>
+            <WorkItem {...project} align={i % 2 != 0 ? "left" : "right"} />
           ))}
         </div>
       </div>
