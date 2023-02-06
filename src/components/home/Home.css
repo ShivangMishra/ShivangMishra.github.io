@@ -20,7 +20,6 @@
   /* background-color: red; */
   z-index: 2;
   pointer-events: none;
-  width: fit-content;
   animation: intro-anim 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   padding-left: 17vw;
 }
@@ -84,6 +83,8 @@
     padding: 10vw;
   }
 }
+
+
 
 
 
