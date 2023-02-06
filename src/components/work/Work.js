@@ -10,7 +10,8 @@ export default function Work() {
         "An IDE plugin that enables developers to record and attach videos in code comments. Comes with a built-in screen recorder. Available on Jetbrains Marketplace for IntelliJ Idea, PyCharm, Rider, Webstorm, etc.",
       imgUrl: speacodeImg,
       techList: ["Maven", "JUnit", "IntelliJ Platform SDK", "Swing", "Java"],
-      linkList: ["Github", "Show Project"],
+      url: "https://plugins.jetbrains.com/plugin/15672-speacode-video-screen-recorder-for-code--python-java-js-php-etc",
+      // linkList: ["Github", "Show Project"],
       category: "Web Development",
     },
     {
@@ -19,7 +20,7 @@ export default function Work() {
         "Desktop application for carrying out the Data Recapture Exercise (DRE) for Nigerian Retirement Savings Account holders and pensioners at PayOne Solution Systems.",
       imgUrl: penopImg,
       techList: ["Java", "JavaFX", "Lombok", "Webcam Capture", "Jackson"],
-      linkList: ["", ""],
+      // linkList: ["", ""],
       category: "Web Development",
     },
     {
@@ -36,7 +37,8 @@ export default function Work() {
         "Typescript",
         "React Native",
       ],
-      linkList: ["Github", "Show Project"],
+      url: "https://www.retyrn.com/",
+      // linkList: ["Github", "Show Project"],
       category: "Web Development",
     },
   ];
