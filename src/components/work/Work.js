@@ -1,68 +1,42 @@
+import { penopImg, retyrnImg, speacodeImg } from "../../assets";
 import "./Work.css";
 import WorkItem from "./WorkItem";
 
 export default function Work() {
   const projects = [
     {
-      title: "Halcyon Theme",
+      title: "Speacode",
       description:
-        "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
-      imgUrl: "https://picsum.photos/400/400",
-      techList: [
-        "React",
-        "Styled Components",
-        "Twilio",
-        "Figma",
-        "Gifted Chat",
-      ],
+        "An IDE plugin that enables developers to record and attach videos in code comments. Comes with a built-in screen recorder. Available on Jetbrains Marketplace for IntelliJ Idea, PyCharm, Rider, Webstorm, etc.",
+      imgUrl: speacodeImg,
+      techList: ["Maven", "JUnit", "IntelliJ Platform SDK", "Swing", "Java"],
       linkList: ["Github", "Show Project"],
       category: "Web Development",
     },
     {
-      title: "Halcyon Theme",
+      title: "PenOp DRE",
       description:
-        "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
-      imgUrl: "https://picsum.photos/400/400",
+        "Desktop application for carrying out the Data Recapture Exercise (DRE) for Nigerian Retirement Savings Account holders and pensioners at PayOne Solution Systems.",
+      imgUrl: penopImg,
+      techList: ["Java", "JavaFX", "Lombok", "Webcam Capture", "Jackson"],
+      linkList: ["", ""],
+      category: "Web Development",
+    },
+    {
+      title: "Retyrn",
+      description:
+        "A mobile app for accident reporting and claim resolution to enable the customer to get a fair and speedy resolution of their accident. Available on App Store and Play Store.",
+      imgUrl: retyrnImg,
       techList: [
-        "React",
-        "Styled Components",
-        "Twilio",
-        "Figma",
-        "Gifted Chat",
+        "OCR ",
+        "2FA",
+        "iOS",
+        "Android",
+        "Jest",
+        "Typescript",
+        "React Native",
       ],
       linkList: ["Github", "Show Project"],
-      category: "Web Development",
-    },
-    {
-      title: "XYZ",
-      description: "Aliquip nisi nostrud do exercitation tempor anim velit.",
-      imgUrl: "https://picsum.photos/400/400",
-      techList: [],
-      linkList: ["", ""],
-      category: "Web Development",
-    },
-    {
-      title: "XYZ",
-      description: "Aliquip nisi nostrud do exercitation tempor anim velit.",
-      imgUrl: "https://picsum.photos/400/400",
-      techList: [],
-      linkList: ["", ""],
-      category: "Web Development",
-    },
-    {
-      title: "XYZ",
-      description: "Aliquip nisi nostrud do exercitation tempor anim velit.",
-      imgUrl: "https://picsum.photos/400/400",
-      techList: [],
-      linkList: ["", ""],
-      category: "Web Development",
-    },
-    {
-      title: "XYZ",
-      description: "Aliquip nisi nostrud do exercitation tempor anim velit.",
-      imgUrl: "https://picsum.photos/400/400",
-      techList: [],
-      linkList: ["", ""],
       category: "Web Development",
     },
   ];
@@ -74,7 +48,7 @@ export default function Work() {
         <div className="work-items-container">
           {projects.map((project, i) => (
             // <div className="work-item"></div>
-            <WorkItem {...project} align={i % 2 != 0 ? "left" : "right"} />
+            <WorkItem {...project} align={i % 2 !== 0 ? "left" : "right"} />
           ))}
         </div>
       </div>
