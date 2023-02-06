@@ -22,9 +22,9 @@ export default function Home() {
         </p> */}
         {/* </div> */}
         <h1 className="intro-big-heading">I'm Shivang Mishra</h1>
-        <h1 className="intro-big-heading">A Software Developer</h1>
+        <h1 className="intro-big-heading">Fullstack Developer</h1>
         <p className="hero-sub">
-          I specialise in developing Web applications and Games.
+          I build websites, apps, games, and more.
         </p>
         <br />
         <br />
