@@ -17,7 +17,8 @@
 }
 
 .about-heading {
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: var(--light-blue);
   font-size: 4rem;
   margin-bottom: 2rem;
 }

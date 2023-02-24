@@ -102,7 +102,7 @@ const animate = (timestamp) => {
 const draw = (canvas, offscreenCanvas) => {
   // canvasOff = ctxt.canvasOff;
   // canvas.offscreenCanvas = document.createElement("canvas");
-  numPoints = canvas.width * 0.045;
+  numPoints = canvas.width * 0.09;
   canvasMain = canvas;
   canvasOff = offscreenCanvas;
 

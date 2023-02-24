@@ -1,4 +1,5 @@
 * {
+  
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -12,7 +13,7 @@
 }
 
 .hero-sub {
-  color: var(--text-color);
+  color: var(--sub-text-color);
   font-size: 1.946rem;
 }
 
@@ -21,7 +22,7 @@
   z-index: 2;
   pointer-events: none;
   animation: intro-anim 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-  padding-left: 17vw;
+  padding-left: 15vw;
 }
 
 .intro-big-heading {
@@ -72,11 +73,11 @@
 
 @media only screen and (max-width: 580px) {
   .intro-big-heading {
-    font-size: 12vw;
+    font-size: 11vw;
   }
 
   .hero-sub {
-    font-size: 3vw;
+    font-size: 6vw;
   }
 
   .intro-text-zone {

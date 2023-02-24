@@ -20,7 +20,8 @@
   text-align: center;
   display: flex;
   font-size: 4rem;
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: var(--light-blue);
 }
 
 .work-items-container {

@@ -21,10 +21,10 @@ export default function Home() {
           <span aria-hidden="true">I'm Shivang Mishra</span>
         </p> */}
         {/* </div> */}
-        <h1 className="intro-big-heading">I'm Shivang Mishra</h1>
-        <h1 className="intro-big-heading">Fullstack Developer</h1>
+        <h1 className="intro-big-heading">Hi, I'm Shivang,</h1>
+        <h1 className="intro-big-heading" style={{color:"var(--sub-text-color)"}}>a Software Developer.</h1>
         <p className="hero-sub">
-          I build websites, apps, games, and more.
+          I build websites, applications, games, and more.
         </p>
         <br />
         <br />

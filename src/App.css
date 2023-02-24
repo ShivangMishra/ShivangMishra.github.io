@@ -7,6 +7,7 @@
   --light-gray: #9ba2ae;
   --gray: #191919;
   --text-color: var(--white);
+  --sub-text-color: var(--light-gray);
   --link-color: var(--light-gray);
   --link-hover-color: var(--white);
   --link-active-color: var(--light-blue);
