@@ -25,7 +25,14 @@ export default function Navbar() {
             </NavHashLink>
           </li>
         ))}
-        <button>Resume</button>
+        <button
+          onClick={() =>
+            (window.location.href =
+              "https://drive.google.com/file/d/1prWM42Lqy2aQZym7K9EKkEuGaQP5qdz3/view?usp=sharing")
+          }
+        >
+          Resume
+        </button>
       </ul>
     </nav>
   );

@@ -40,7 +40,6 @@
 
 .skills-container {
   display: flex;
-  
   animation: skills-anim 3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   justify-content: center;
   align-items: center;
@@ -55,29 +54,41 @@
 }
 
 @media only screen and (max-width: 1200px) {
+  .about-container {
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .about-text-zone {
-    width: 50%;
+    width: 547px;
+    text-align: center;
   }
   .skills-container {
+    padding: 1rem;
     width: 50%;
+  }
+  .about {
+    height: fit-content;
   }
 }
 
 @media only screen and (max-width: 920px) {
-  .about-container {
-    align-items: center;
-  }
-  .about-text-zone {
-    text-align: center;
-    width: 80%;
-    padding: 0;
-  }
-
-  .about {
+   .about {
     padding-top: 0;
+    height: fit-content;
+  }
+  .about-container {
+    padding-top: 1rem;
+  }
+  .about-heading {
+    font-size: 10vw;
+  }
+  .about-text {
+    font-size: 3vw;
   }
 
   .skills-container {
+    min-width: 0;
     width: 80%;
   }
 }

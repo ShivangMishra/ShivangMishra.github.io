@@ -2,29 +2,57 @@
   background-color: var(--dark-blue);
   justify-content: center;
   align-items: center;
-  /* background-color: brown; */
-  /* margin-top: 5rem; */
   display: flex;
+  padding: 2rem;
   height: 100vh;
 }
 
 .contact-heading {
   color: var(--light-blue);
+  text-align: center;
   font-size: 4rem;
   margin-bottom: 2rem;
 }
 
 .contact-container {
+  /* background-color: red; */
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    width: 40%;
-    min-width: 400px
+    /* width: 40%; */
+    width: 540px;
 }
 
 .contact-text {
     color: var(--text-color);
     font-size: 18px;
     text-align: center;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+  .contact-container {
+    min-width: 0;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .about-container {
+    align-items: center;
+  }
+  .about-text-zone {
+    text-align: center;
+    width: 80%;
+    padding: 0;
+  }
+
+  .about {
+    padding-top: 0;
+  }
+
+  .skills-container {
+    width: 80%;
+  }
 }

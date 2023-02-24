@@ -22,13 +22,23 @@ export default function Home() {
         </p> */}
         {/* </div> */}
         <h1 className="intro-big-heading">Hi, I'm Shivang,</h1>
-        <h1 className="intro-big-heading" style={{color:"var(--sub-text-color)"}}>a Software Developer.</h1>
+        <h1
+          className="intro-big-heading"
+          style={{ color: "var(--sub-text-color)" }}
+        >
+          a Software Developer.
+        </h1>
         <p className="hero-sub">
           I build websites, applications, games, and more.
         </p>
         <br />
         <br />
-        <button className="contact-btn">Contact me!</button>
+        <button
+          className="contact-btn"
+          onClick={() => (window.location.href = "mailto:shivang978@gmail.com")}
+        >
+          Contact me!
+        </button>
       </div>
     </section>
   );
