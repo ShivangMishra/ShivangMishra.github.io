@@ -1,0 +1,30 @@
+.contact {
+  background-color: var(--dark-blue);
+  justify-content: center;
+  align-items: center;
+  /* background-color: brown; */
+  /* margin-top: 5rem; */
+  display: flex;
+  height: 100vh;
+}
+
+.contact-heading {
+  color: var(--light-blue);
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 40%;
+    min-width: 400px
+}
+
+.contact-text {
+    color: var(--text-color);
+    font-size: 18px;
+    text-align: center;
+}
