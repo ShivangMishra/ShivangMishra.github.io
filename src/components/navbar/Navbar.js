@@ -28,7 +28,7 @@ export default function Navbar() {
         <button
           onClick={() =>
             (window.location.href =
-              "https://drive.google.com/file/d/1prWM42Lqy2aQZym7K9EKkEuGaQP5qdz3/view?usp=sharing")
+              "https://drive.google.com/file/d/1nLsr17GHFYY41_J7eaByZP2lHIVdwAsj/view?usp=sharing")
           }
         >
           Resume
