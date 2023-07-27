@@ -1,4 +1,4 @@
-import { penopImg, retyrnImg, speacodeImg } from "../../assets";
+import { penopImg, retyrnImg, speacodeImg, printsecImg } from "../../assets";
 import "./Work.css";
 import WorkItem from "./WorkItem";
 
@@ -41,6 +41,42 @@ export default function Work() {
       // linkList: ["Github", "Show Project"],
       category: "Web Development",
     },
+    {
+      title: "PrintSEC",
+      description:
+        "A mobile app offering cloud based secure printing service. It allows the users to print their documents to any printer listed in PrintSEC app printer listing based on geographical location of the user.",
+      imgUrl: printsecImg,
+      techList: [
+        "Razorpay",
+        "Google Maps",
+        "iOS",
+        "Android",
+        "Jest",
+        "Typescript",
+        "React Native",
+      ],
+      url: "https://www.retyrn.com/",
+      // linkList: ["Github", "Show Project"],
+      category: "Web Development",
+    },
+    // {
+    //   title: "EikoCircle Website",
+    //   description:
+    //     "A mobile app offering cloud based secure printing service. It allows the users to print their documents to any printer listed in PrintSEC app printer listing based on geographical location of the user.",
+    //   imgUrl: printsecImg,
+    //   techList: [
+    //     "Razorpay",
+    //     "Google Maps",
+    //     "iOS",
+    //     "Android",
+    //     "Jest",
+    //     "Typescript",
+    //     "React Native",
+    //   ],
+    //   url: "https://www.retyrn.com/",
+    //   // linkList: ["Github", "Show Project"],
+    //   category: "Web Development",
+    // },
   ];
 
   return (
