@@ -4,3 +4,4 @@ export const retyrnImg = require("./assets/retyrn.png");
 export const penopImg = require("./assets/penop.png");
 export const printsecImg = require("./assets/printsec.png");    
 export const eikocircleWebImg = require("./assets/eikocircleWeb.png");
+export const goproblemsImg = require("./assets/goproblems.png");

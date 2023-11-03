@@ -1,4 +1,4 @@
-import { penopImg, retyrnImg, speacodeImg, printsecImg } from "../../assets";
+import { penopImg, retyrnImg, speacodeImg, printsecImg, goproblemsImg } from "../../assets";
 import "./Work.css";
 import WorkItem from "./WorkItem";
 
@@ -49,13 +49,28 @@ export default function Work() {
       techList: [
         "Razorpay",
         "Google Maps",
-        "iOS",
-        "Android",
         "Jest",
         "Typescript",
         "React Native",
       ],
-      url: "https://www.retyrn.com/",
+      url: "https://www.printsec.app/",
+      // linkList: ["Github", "Show Project"],
+      category: "Web Development",
+    },
+    {
+      title: "Go Problems",
+      description:
+        "The ultimate resource for Go players featuring a large selection of quality problems, many ways to solve and interact with them, and deep social integration to make problem solving fun and community based.",
+      imgUrl: goproblemsImg,
+      techList: [
+        "Docker",
+        "MySQL",
+        "Symfony",
+        "PHP",
+        "Bootstrap",
+        "Javascript",
+      ],
+      url: "https://www.goproblems.com/",
       // linkList: ["Github", "Show Project"],
       category: "Web Development",
     },
