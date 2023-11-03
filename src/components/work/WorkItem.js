@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./Work.css";
 export default function WorkItem(props) {
   const imgStyle = { gridColumn: props.align === "left" ? "7 / 14" : "1 / 8" };
@@ -8,11 +7,11 @@ export default function WorkItem(props) {
   };
   return (
     <div className="work-item">
-      <a href={props.url} target="_blank" className="work-item-image-container" style={imgStyle} >
-        <img src={props.imgUrl} className="work-item-image" />
+      <a href={props.url} target="_blank" rel="noreferrer" className="work-item-image-container" style={imgStyle} >
+        <img src={props.imgUrl} className="work-item-image" alt="work item image" />
       </a>
       <div className="work-item-textzone" style={textStyle}>
-        <a className="work-item-title" href={props.url} target="_blank">{props.title}</a>
+        <a className="work-item-title" href={props.url} target="_blank" rel="noreferrer">{props.title}</a>
         <div className="work-item-description">{props.description}</div>
         <div
           className="work-item-tech-list"
