@@ -8,7 +8,7 @@ export default function WorkItem(props) {
   return (
     <div className="work-item">
       <a href={props.url} target="_blank" rel="noreferrer" className="work-item-image-container" style={imgStyle} >
-        <img src={props.imgUrl} className="work-item-image" alt="work item image" />
+        <img src={props.imgUrl} className="work-item-image" alt="work item" />
       </a>
       <div className="work-item-textzone" style={textStyle}>
         <a className="work-item-title" href={props.url} target="_blank" rel="noreferrer">{props.title}</a>

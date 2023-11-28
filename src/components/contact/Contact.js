@@ -1,4 +1,3 @@
-import { NavHashLink } from "react-router-hash-link";
 import "./Contact.css";
 export default function Contact() {
   return (
