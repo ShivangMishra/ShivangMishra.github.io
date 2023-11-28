@@ -1,7 +1,7 @@
 {
   "name": "shivang-portfolio",
   "version": "0.1.0",
-  "homepage": "https://shivangmishra.github.io/",
+  "homepage": "https://shivangmishra.dev/",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.51.14",
