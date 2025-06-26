@@ -25,15 +25,17 @@ export default function About() {
             </p>
             <br />
             <p>
-              Since the beginning of my journey as a passionate software
-              developer, I've worked with global businesses, and collaborated
-              with experienced developers, picking up useful skills and
-              experience along the way.
+              I learned to code at 13 by building a few arcade games in Java.
+              Since then, I've explored various technologies and frameworks,
+              worked with global businesses, and collaborated with experienced
+              engineers, picking up useful skills and experience along the way.
             </p>
             <br />
             <p>
-              I like to build casual sandbox games
-              with Unity engine, and contribute to open source projects.
+              I like to build casual sandbox games with Unity engine, and
+              contribute to interesting open source projects. I'm open to
+              collaborations that can help me learn and grow. If you have a
+              project in mind, feel free to reach out!
             </p>
           </div>
         </div>
