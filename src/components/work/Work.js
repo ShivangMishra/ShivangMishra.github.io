@@ -43,7 +43,7 @@ export default function Work() {
       category: "Web & Mobile Development",
     },
     {
-      title: "Speacode",
+      title: "Speacode IntelliJ Plugin",
       description:
         "An IDE plugin that enables developers to record and attach videos in code comments. Comes with a built-in screen recorder. Available on Jetbrains Marketplace for IntelliJ Idea, PyCharm, Rider, Webstorm, etc.",
       imgUrl: speacodeImg,
@@ -53,7 +53,7 @@ export default function Work() {
       category: "Plugin",
     },
     {
-      title: "PenOp DRE",
+      title: "PenOp DRE Desktop App",
       description:
         "Desktop application for carrying out the Data Recapture Exercise (DRE) for Nigerian Retirement Savings Account holders and pensioners at PayOne Solution Systems.",
       imgUrl: penopImg,
@@ -63,7 +63,7 @@ export default function Work() {
       category: "Desktop Development",
     },
     {
-      title: "Retyrn",
+      title: "Retyrn Mobile App",
       description:
         "A mobile app for accident reporting and claim resolution to enable the customer to get a fair and speedy resolution of their accident. Available on App Store and Play Store.",
       imgUrl: retyrnImg,
@@ -81,9 +81,9 @@ export default function Work() {
       category: "Web Development",
     },
     {
-      title: "PrintSEC",
+      title: "PrintSEC Mobile App",
       description:
-        "A mobile app offering cloud based secure printing service. It allows the users to print their documents to any printer listed in PrintSEC app printer listing based on geolocation of the user.",
+        "PrintSEC offers cloud based secure printing service. It allows the users to print their documents to any printer listed in PrintSEC app printer listing based on geolocation of the user.",
       imgUrl: printsecImg,
       techList: [
         "Razorpay",
