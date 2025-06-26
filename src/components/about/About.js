@@ -11,22 +11,22 @@ export default function About() {
           <h1 className="about-heading">About Me</h1>
           <div className="about-text">
             <p>
-              I'm a Full-stack developer building user-centric applications for
+              I'm a full-stack software developer building user-centric applications for
               the web, mobile and desktop. Check out some of
               <NavHashLink style={{textDecoration:"none", color:"var(--light-blue)"}} smooth to="#work"> my work</NavHashLink>.
             </p>
             <br />
             <p>
               Since the beginning of my journey as a passionate software
-              developer, I've worked with many agencies, and collaborated with
+              developer, I've worked with global businesses, and collaborated with
               experienced developers, picking up useful skills and experience
               along the way.
             </p>
             <br />
             <p>
-              I'm open to Job opportunities where I can contribute, learn and
-              grow. If you have a good opportunity that matches my skills and
-              experience then contact me now.
+              I love to learn new technologies and apply them to solve real-world
+              problems. I am always looking for opportunities to grow and
+              contribute to exciting projects.
             </p>
           </div>
         </div>

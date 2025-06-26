@@ -5,3 +5,5 @@ export const penopImg = require("./assets/penop.png");
 export const printsecImg = require("./assets/printsec.png");    
 export const eikocircleWebImg = require("./assets/eikocircleWeb.png");
 export const goproblemsImg = require("./assets/goproblems.png");
+export const foliaImg = require("./assets/folia.png");
+export const kidzappImg = require("./assets/kidzapp.png");

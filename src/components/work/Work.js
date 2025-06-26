@@ -1,25 +1,46 @@
-import { penopImg, retyrnImg, speacodeImg, printsecImg, goproblemsImg } from "../../assets";
+import {
+  penopImg,
+  retyrnImg,
+  speacodeImg,
+  printsecImg,
+  goproblemsImg,
+  foliaImg,
+  kidzappImg,
+} from "../../assets";
 import "./Work.css";
 import WorkItem from "./WorkItem";
 
 export default function Work() {
   const projects = [
     {
-      title: "Go Problems",
+      title: "Folia Mobile App",
+      description:
+        "Folia Platform allows its users to organize their work into projects, capture ideas precisely using intuitive annotation tools, and share with collaborators in real-time.",
+      imgUrl: foliaImg,
+      techList: ["React Native", "Typescript", "GraphQL", "Java", "Swift"],
+      url: "https://apps.apple.com/us/app/folia/id6737592384?platform=ipad/",
+      // linkList: ["Github", "Show Project"],
+      category: "Mobile Development",
+    },
+    {
+      title: "Go Problems website",
       description:
         "The ultimate resource for Go players featuring a large selection of quality problems, many ways to solve and interact with them, and deep social integration to make problem solving fun and community based.",
       imgUrl: goproblemsImg,
-      techList: [
-        "Docker",
-        "MySQL",
-        "Symfony",
-        "PHP",
-        "Bootstrap",
-        "Javascript",
-      ],
-      url: "https://www.goproblems.com/",
+      techList: ["Symfony", "PHP", "Bootstrap", "React", "Javascript"],
+      url: "https://goproblems.com/",
       // linkList: ["Github", "Show Project"],
       category: "Web Development",
+    },
+    {
+      title: "Kidzapp Platform",
+      description:
+        "A web application designed to help parents find and book kids' activities in the UAE. It comes with a companion mobile app available on App Store and Play Store for personalized experience.",
+      imgUrl: kidzappImg,
+      techList: ["Next", "React Native", "Typescript"],
+      url: "https://kidzapp.com/",
+      // linkList: ["Github", "Show Project"],
+      category: "Web & Mobile Development",
     },
     {
       title: "Speacode",
@@ -29,7 +50,7 @@ export default function Work() {
       techList: ["Maven", "JUnit", "IntelliJ Platform SDK", "Swing", "Java"],
       url: "https://plugins.jetbrains.com/plugin/15672-speacode-video-screen-recorder-for-code--python-java-js-php-etc",
       // linkList: ["Github", "Show Project"],
-      category: "Web Development",
+      category: "Plugin",
     },
     {
       title: "PenOp DRE",
@@ -38,7 +59,8 @@ export default function Work() {
       imgUrl: penopImg,
       techList: ["Java", "JavaFX", "Lombok", "Webcam Capture", "Jackson"],
       // linkList: ["", ""],
-      category: "Web Development",
+      url: "https://www.penop.com.ng/",
+      category: "Desktop Development",
     },
     {
       title: "Retyrn",
@@ -61,7 +83,7 @@ export default function Work() {
     {
       title: "PrintSEC",
       description:
-        "A mobile app offering cloud based secure printing service. It allows the users to print their documents to any printer listed in PrintSEC app printer listing based on geographical location of the user.",
+        "A mobile app offering cloud based secure printing service. It allows the users to print their documents to any printer listed in PrintSEC app printer listing based on geolocation of the user.",
       imgUrl: printsecImg,
       techList: [
         "Razorpay",
@@ -74,7 +96,7 @@ export default function Work() {
       // linkList: ["Github", "Show Project"],
       category: "Web Development",
     },
-   
+
     // {
     //   title: "EikoCircle Website",
     //   description:
